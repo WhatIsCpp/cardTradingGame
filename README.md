@@ -74,7 +74,9 @@ java -jar /path-to-your-project/target/demo-0.0.1-SNAPSHOT.jar
 
  ## How To Play
  
- First you need to create the players with **/api/v1/players/create/{playerName}** endpoint
+ First you need to create the player1 with **/api/v1/players/create/{playerName}** endpoint
+ 
+ After create the player2 with **/api/v1/players/create/{playerName}** endpoint
  
  Afterwards start the game with **/api/v1/game/start/{player1},{player2}** endpoint
  
