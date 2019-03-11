@@ -1,6 +1,7 @@
  # INSTRUCTIONS
  
  install postgresql
+ 
  create datababe Login/Group Role
 - Name:cardtradeservice
 - Password:cardtradeservice
@@ -71,4 +72,19 @@ java -jar /path-to-your-project/target/demo-0.0.1-SNAPSHOT.jar
  
  http://localhost:8080/swagger-ui.html#/
 
+ ## How To Play
+ 
+ First you need to create the players with **/api/v1/players/create/{playerName}** endpoint
+ Afterwards start the game with **/api/v1/game/start/{player1},{player2}** endpoint
+ It will return the starter player's name
+ Player needs to draw a card with **/api/v1/game/draw/{playerName}** endpoint first in order to play his turn
+ Each player gains a mana crystal when it is their turn
+ If the player doesnt have enough mana to play a card their turn will end
+ If the player does have mana to play cards, their turn will end when they dont have anymore mana or dont have anymore cards
+ Each turn players mana's are restored according to their mana crystals
+ Each player has 30 hp, each card deals damage equal to their manacosts
+ Each player has 20 cards in their deck and draw random 3 cards at beginning and 1 random card each turn
+ if player doesnt have any cards in his deck and tries to draw a card that player receives 1 damage
+ If a player has 0 or lower hp they lose the game
+ 
 - enjoy ;)
