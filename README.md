@@ -90,6 +90,12 @@ java -jar /path-to-your-project/target/demo-0.0.1-SNAPSHOT.jar
  
  If the player does have mana to play cards, their turn will end when they dont have anymore mana or dont have anymore cards
  
+ Player plays the card with **/api/v1/game/play/{cardName}/{playerName}** endpoint where playername is the player that plays the card and cardName is the card that player wants to play
+ 
+ Player can check his hand for which cards it has with **/api/v1/players/hand/{playerName}** endpoint
+ 
+ Player can end his turn even if he has enough mana and cards with **/api/v1/game/endturn/{playerName}** endpoint
+ 
  Each turn players mana's are restored according to their mana crystals
  
  Each player has 30 hp, each card deals damage equal to their manacosts
