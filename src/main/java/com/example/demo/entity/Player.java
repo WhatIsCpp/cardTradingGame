@@ -17,6 +17,7 @@ import javax.validation.constraints.NotNull;
 
 import com.fasterxml.jackson.annotation.JsonIgnore;
 
+//TODO need to keep history data
 @Entity
 @Table(name = "player")
 public class Player {

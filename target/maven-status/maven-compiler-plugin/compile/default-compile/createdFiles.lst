@@ -1,0 +1,13 @@
+com\example\demo\controller\PlayerController.class
+com\example\demo\repository\PlayerRepository.class
+com\example\demo\DemoApplication.class
+com\example\demo\repository\CardRepository.class
+com\example\demo\service\CardService.class
+com\example\demo\controller\CardController.class
+com\example\demo\controller\GameController.class
+com\example\demo\service\PlayerService.class
+com\example\demo\service\impl\PlayerServiceImpl.class
+com\example\demo\config\DemoApplicationConfig.class
+com\example\demo\service\impl\CardServiceImpl.class
+com\example\demo\entity\Card.class
+com\example\demo\entity\Player.class
