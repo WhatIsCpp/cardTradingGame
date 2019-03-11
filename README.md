@@ -68,7 +68,7 @@ java -jar /path-to-your-project/target/demo-0.0.1-SNAPSHOT.jar
  **/api/v1/players/hand/{playerName}**
  Returns the current hand of the player
  
- **swagger url for testing**
+ ## Swagger Url For Testing
  
  http://localhost:8080/swagger-ui.html#/
 
