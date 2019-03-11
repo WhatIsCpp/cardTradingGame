@@ -202,9 +202,11 @@ public class PlayerServiceImpl implements PlayerService {
 	public void checkPlayerManaAndCardsInHand(String playerName) {
 		Player player = checkPlayer(playerName);
 		player.setTurn(false);
-		for (Card card : player.getHand()) {
-			if (card.getManaCost() <= player.getMana()) {
-				player.setTurn(true);
+		if (player.getHand().size() != 0) {
+			for (Card card : player.getHand()) {
+				if (card.getManaCost() <= player.getMana()) {
+					player.setTurn(true);
+				}
 			}
 		}
 		if (!player.isTurn()) {

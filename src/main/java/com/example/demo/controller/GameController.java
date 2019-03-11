@@ -12,7 +12,7 @@ import com.example.demo.entity.Card;
 import com.example.demo.service.PlayerService;
 
 @RestController
-@RequestMapping("/game")
+@RequestMapping("/api/v1/game")
 public class GameController {
 
 	@Autowired

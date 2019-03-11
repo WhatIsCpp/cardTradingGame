@@ -10,13 +10,13 @@ import com.example.demo.entity.Card;
 import com.example.demo.service.CardService;
 
 @RestController
-@RequestMapping("/card")
+@RequestMapping("/api/v1/card")
 public class CardController {
 
 	@Autowired
 	private CardService cardService;
 
-	@GetMapping("/cards/{cardName}")
+	@GetMapping("/{cardName}")
 	public Card getCardByName(@PathVariable String cardName) {
 		return cardService.findCardByName(cardName);
 	}

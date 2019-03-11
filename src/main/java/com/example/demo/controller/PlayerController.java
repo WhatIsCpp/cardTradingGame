@@ -14,7 +14,7 @@ import com.example.demo.entity.Player;
 import com.example.demo.service.PlayerService;
 
 @RestController
-@RequestMapping("/players")
+@RequestMapping("/api/v1/players")
 public class PlayerController {
 
 	@Autowired
